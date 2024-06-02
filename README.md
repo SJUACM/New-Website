@@ -26,3 +26,22 @@ npm install
 ```bash
 npm run dev
 ```
+
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+## Code Formatting
+
+Format your code automatically by running 
+```bash
+npm run format
+```
+
+
+## Learn More
+
+To learn more about Next JS, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Learn Tailwind CSS](https://tailwindcss.com/docs/installation)

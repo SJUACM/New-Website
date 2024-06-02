@@ -19,13 +19,16 @@ export const MenuItem = ({
   item,
   children,
 }: {
-  setActive: (item: string) => void;
-  active: string | null;
+  setActive?: (item: string) => void;
+  active?: string | null;
   item: string;
   children?: React.ReactNode;
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div
+      onMouseEnter={() => setActive && setActive(item)}
+      className="relative "
+    >
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
@@ -113,7 +116,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+      className="text-neutral-700 text-neutral-200 hover:text-gray-300 "
     >
       {children}
     </Link>

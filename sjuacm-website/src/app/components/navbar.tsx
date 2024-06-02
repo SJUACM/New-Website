@@ -8,25 +8,21 @@ export function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "fixed top-10 inset-x-0 max-w-xl mx-auto z-50 rounded-3xl border border-gray-700 gap-x-8",
+        "fixed top-10 inset-x-0 max-w-xl mx-auto rounded-3xl border border-gray-700 gap-x-8",
         className,
       )}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="About">
-          {/* <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">About</HoveredLink>
-            <HoveredLink href="/interface-design">Meetings</HoveredLink>
-            <HoveredLink href="/seo">E-Board</HoveredLink>
-            <HoveredLink href="/branding">Resources</HoveredLink>
-            <HoveredLink href="/branding">Blog</HoveredLink>
-          </div> */}
+        <MenuItem item="About" setActive={setActive} />
+        <MenuItem setActive={setActive} active={active} item="Meetings">
+          <div className="text-sm grid grid-cols-2 gap-10 p-4">
+            <HoveredLink href="/meetings">Spring 2024</HoveredLink>
+            <HoveredLink href="/meetings">Fall 2023</HoveredLink>
+            <HoveredLink href="/meetings">Spring 2023</HoveredLink>
+            <HoveredLink href="/meetings">Fall 2022</HoveredLink>
+            <HoveredLink href="/meetings">Spring 2022</HoveredLink>
+          </div>
         </MenuItem>
-        <MenuItem
-          setActive={setActive}
-          active={active}
-          item="Meetings"
-        ></MenuItem>
         <MenuItem
           setActive={setActive}
           active={active}

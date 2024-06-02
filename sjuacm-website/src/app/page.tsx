@@ -4,17 +4,18 @@ import Image from "next/image";
 import { BackgroundBeams } from "./components/background-beam";
 import Logo from "../../public/images/SJU_ACM_Logo.png";
 import { Navbar } from "./components/navbar";
+import MacBookScroll from "./components/macbook-scroll";
+import { HoverBorderGradient } from "./components/hover-border-gradient";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-poppins text-sm lg:flex">
-        <div className="flex h-24 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
+      <div className="z-50 w-full max-w-5xl items-center justify-between font-poppins text-sm lg:flex">
+        <div className="flex h-24 w-full justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           <Navbar />
           <a
             className="flex place-items-center gap-2 lg:pointer-events-auto lg:p-0"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/"
           >
             <Image
               src={Logo}
@@ -62,6 +63,9 @@ export default function Home() {
       </div>
 
       <BackgroundBeams />
+      <MacBookScroll />
+
+      <div className="pb-40"></div>
     </main>
   );
 }
