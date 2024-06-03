@@ -1,9 +1,11 @@
-# SJU ACM Revamped Website
+# SJU ACM Website V2
 Built with:
 - React 
 - Next JS 14
 - Tailwind CSS
 - TypeScript
+- Aceternity UI
+- Turbopack
 
 # Getting Started
 
@@ -36,6 +38,23 @@ Format your code automatically by running
 ```bash
 npm run format
 ```
+
+## Tasks / Roadmap 
+- [ ] Add all necessary info on home page
+- [ ] Add all necessary info on about page
+- [ ] Add all necessary info on resources page
+- [ ] Migrate all pictures, meeting info, and blogs into [Contentful](https://www.contentful.com/).
+      By using a content management system like contentful, it makes it easier and faster to add more meetings instead of handling it in our codebase. 
+- [ ] Display information for all meetings by fetching the corresponding data from Contentful, read more how to [here](https://www.contentful.com/developers/docs/concepts/apis/).
+- [ ] Display blogs by fetching the data from Contentful
+- [ ] Make all pages & components mobile responsive
+- [ ] Add authentication through [Clerk]([https://clerk.com/docs/quickstarts/nextjs](https://clerk.com/docs/qui))
+- [ ] Add a backend Postgres database through [Supabase](https://supabase.com/docs/guides/database/overview) 
+- [ ] Allow only ACM E-board members to have access to an admin dashboard
+- [ ] Display ACM member statistics in admin dashboard  
+- [ ] Deploy website through Vercel
+   
+
 
 
 ## Learn More
