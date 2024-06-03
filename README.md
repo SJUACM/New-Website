@@ -11,12 +11,12 @@ Built with:
 
 1. Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/SJUACM/New-Website
+git clone https://github.com/SJUACM/Website-V2
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd New-Website/sjuacm-website
+cd Website-V2/sjuacm-website
 ```
 
 3. Install dependencies:
