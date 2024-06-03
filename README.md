@@ -24,7 +24,12 @@ cd New-Website/sjuacm-website
 npm install
 ```
 
-4. Run the development server:
+4. If you get errors with dependencies, try to install the packages below explicitly:
+```bash
+npm install framer-motion clsx tailwind-merge @tabler/icons-react
+```
+
+5. Run the development server:
 ```bash
 npm run dev
 ```

@@ -26,6 +26,7 @@ export function Navbar({ className }: { className?: string }) {
         <MenuItem
           setActive={setActive}
           active={active}
+          href="/eboard"
           item="E-Board"
         ></MenuItem>
         <MenuItem

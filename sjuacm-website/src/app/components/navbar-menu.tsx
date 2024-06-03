@@ -18,17 +18,16 @@ export const MenuItem = ({
   active,
   item,
   children,
+  href,
 }: {
   setActive?: (item: string) => void;
   active?: string | null;
   item: string;
   children?: React.ReactNode;
+  href?: string;
 }) => {
-  return (
-    <div
-      onMouseEnter={() => setActive && setActive(item)}
-      className="relative "
-    >
+  const content = (
+    <>
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
@@ -59,6 +58,15 @@ export const MenuItem = ({
           )}
         </motion.div>
       )}
+    </>
+  );
+
+  return (
+    <div
+      onMouseEnter={() => setActive && setActive(item)}
+      className="relative "
+    >
+      {href ? <Link href={href}>{content}</Link> : content}
     </div>
   );
 };
