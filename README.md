@@ -49,12 +49,11 @@ npm run format
 - [ ] Display blogs by fetching the data from Contentful
 - [ ] Make all pages & components mobile responsive
 - [ ] Add authentication through [Clerk]([https://clerk.com/docs/quickstarts/nextjs](https://clerk.com/docs/qui))
-- [ ] Add a backend Postgres database through [Supabase](https://supabase.com/docs/guides/database/overview) 
+- [ ] Add a backend Postgres database through [Supabase](https://supabase.com/docs/guides/database/overview). Learn more [here](https://supabase.com/docs/guides/getting-started/quickstarts/nextjs)
 - [ ] Allow only ACM E-board members to have access to an admin dashboard
 - [ ] Display ACM member statistics in admin dashboard  
 - [ ] Deploy website through Vercel
    
-
 
 
 ## Learn More
@@ -64,3 +63,4 @@ To learn more about Next JS, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Learn Tailwind CSS](https://tailwindcss.com/docs/installation)
+- [Getting Started with Supabase](https://www.youtube.com/watch?v=WdA6b0jPNv4)
