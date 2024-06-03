@@ -52,22 +52,24 @@ export default function Meeting({
         >
           {description}
         </CardItem>
-        <div className="flex justify-between items-center mt-10">
+        <div className="flex justify-left space-x-4 items-center mt-10">
           {slides && (
             <CardItem
               translateZ={20}
               as={Link}
               href={slides}
               target="__blank"
-              className="py-2 rounded-xl text-xs font-normal dark:text-white"
+              className="py-2 rounded-xl text-xs font-normal dark:text-white border p-2"
             >
-              Download Slides →
+              Download Slides
             </CardItem>
           )}
           {recording && (
             <CardItem
               translateZ={20}
-              as="button"
+              as={Link}
+              href={recording}
+              target="__blank"
               className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
             >
               Watch Recording

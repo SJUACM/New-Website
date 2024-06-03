@@ -15,7 +15,7 @@ export function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <MenuItem item="About" setActive={setActive} />
         <MenuItem setActive={setActive} active={active} item="Meetings">
-          <div className="text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="text-sm text-neutral-500 grid grid-cols-2 gap-10 p-4">
             <HoveredLink href="/meetings">Spring 2024</HoveredLink>
             <HoveredLink href="/meetings">Fall 2023</HoveredLink>
             <HoveredLink href="/meetings">Spring 2023</HoveredLink>
