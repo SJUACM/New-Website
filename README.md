@@ -26,7 +26,7 @@ npm install
 
 4. If you get errors with dependencies, try to install the packages below explicitly:
 ```bash
-npm install framer-motion clsx tailwind-merge @tabler/icons-react
+npm install framer-motion clsx tailwind-merge @tabler/icons-react @fortawesome/free-brands-svg-icons
 ```
 
 5. Run the development server:
